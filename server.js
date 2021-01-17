@@ -1,7 +1,7 @@
 const dbd = require("dbd.js")
  
 const bot = new dbd.Bot({
-token: "$getVar[token]", 
+token: "enter-token-here", 
 prefix: "$getVar[prefix]" 
 })
  
@@ -24,7 +24,6 @@ code: command.code
 }
 //config
 bot.variables({
-    token: "enter-token-here",
     prefix: "enter-prefix-here",
     about: "Not set yet!",
     pronouns: "Not set yet!",
@@ -111,6 +110,4 @@ $editMessage[$message[1];{footer:🔄 - Return to home page}
 \`\$getVar[prefix]ping\`}{color:f29cfb}
 ]
 `
-})
-
 })
