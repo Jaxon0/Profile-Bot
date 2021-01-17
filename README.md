@@ -11,6 +11,9 @@ Profile Bot was created in 2020 by jaxon#6666 on Discord as a public, non self h
 - Copy the repo link and create your project in Glitch
 - Go to the server.js file and enter your bot token into "bot-token-here", then choose a prefix where it says "prefix-goes-here".
 
+![Image](https://i.imgur.com/b2k6i1y.png)
+*enter under "token" and "prefix"*
+
 And you're done! Your bot should come online in your server and you got it!
 
 **This bot is __NOT__ made for public use. If you are found opening this to public, you will face consequences**
