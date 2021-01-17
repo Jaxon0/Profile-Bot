@@ -1,8 +1,8 @@
 const dbd = require("dbd.js")
  
 const bot = new dbd.Bot({
-token: "bot-token-here", 
-prefix: "prefix-goes-here" 
+token: "$getVar[token]", 
+prefix: "$getVar[prefix]" 
 })
  
 bot.onMessage()
@@ -22,15 +22,10 @@ code: command.code
 })
 } 
 }
-
-bot.status({
-      text: "github.com/jaxbots/Profile-Bot",
-      type: "WATCHING",
-      status: "dnd",
-      time: 12
-})
-
+//config
 bot.variables({
+    token: "enter-token-here",
+    prefix: "enter-prefix-here",
     about: "Not set yet!",
     pronouns: "Not set yet!",
     name: "Not set yet!",
@@ -41,6 +36,13 @@ bot.variables({
     avatar: "https://media.discordapp.net/attachments/773055345463394315/776267864931696640/unknown.png?width=453&height=453",
     banner: "https://styleclick.ca/public/front/images/no-img-banner.jpg"
   })
+
+bot.status({
+      text: "github.com/jaxbots/Profile-Bot",
+      type: "WATCHING",
+      status: "dnd",
+      time: 12
+})
 
 
 //main page
@@ -53,7 +55,7 @@ $textSplit[$sendMessage[{title: Help} {description:React to see the following pa
 3️⃣ - Other Commands
 4️⃣ - Global Profile Setup
 
-[Support Server\\](https://discord.com/invite/8G5TaED5Fm) | [Website\\](https://www.profile-bot.tk)} {color:f29cfb};yes]; ]
+[Support Server\\](https://discord.com/invite/8G5TaED5Fm) | [Repo\\](https://github.com/jaxbots/Profile-Bot/)} {color:f29cfb};yes]; ]
 $channelSendMessage[784933988648878101;{title:Command Ran}{description:A command has been ran in [$serverName\\]($getServerInvite) by $username}{color:RANDOM}]
 `})
 
@@ -66,7 +68,7 @@ bot.awaitedCommand({
 3️⃣ - Other Commands
 4️⃣ - Global Profile Setup
 
-[Support Server\\](https://discord.com/invite/8G5TaED5Fm) | [Website\\](https://www.profile-bot.tk)} {color:f29cfb}
+[Support Server\\](https://discord.com/invite/8G5TaED5Fm) | [Repo\\](https://github.com/jaxbots/Profile-Bot/)} {color:f29cfb}
 ]
 `})
 
@@ -75,14 +77,14 @@ bot.awaitedCommand({
  name: "awaitReaction2",
  code: `
  $editMessage[$message[1];{title:Page 1} {description:✦**__How To Setup Your Profile!__**✦
-1.≛ run \`\p/setname (your name here)\`
-2.≛ run \`\p/setabout (your bio here)\`
-3.≛ run \`\p/setpronouns (your pronouns here)\`
-4.≛ run \`\p/setlocation (your location here)\`
-5.≛ run \`\p/setbirthday (your birthday here)\`
-6.≛ run \`\p/setoccupation (your occupation here)\`
-7.≛ run \`\p/setavatar (link here)\`
-8.≛ run \`\p/setbanner (link here)\`} {color:f29cfb} {footer:🔄 - Return to home page}
+1.≛ run \`\$getVar[prefix]setname (your name here)\`
+2.≛ run \`\$getVar[prefix]setabout (your bio here)\`
+3.≛ run \`\$getVar[prefix]setpronouns (your pronouns here)\`
+4.≛ run \`\$getVar[prefix]setlocation (your location here)\`
+5.≛ run \`\$getVar[prefix]setbirthday (your birthday here)\`
+6.≛ run \`\$getVar[prefix]setoccupation (your occupation here)\`
+7.≛ run \`\$getVar[prefix]setavatar (link here)\`
+8.≛ run \`\$getVar[prefix]setbanner (link here)\`} {color:f29cfb} {footer:🔄 - Return to home page}
 ]
  `
 })
@@ -93,9 +95,9 @@ bot.awaitedCommand({
  code: `
  $editMessage[$message[1];{footer:🔄 - Return to home page}
 {title:Page 2} {description:**__Profile Commands!__**
-\`\p/profile\` (shows your profile, can show another profile if a user is mentioned)
-\`\p/reset\` (resets every aspect of your profile)
-\`\p/like @mention\` (likes another users profile)} {color:f29cfb} 
+\`\$getVar[prefix]profile\` (shows your profile, can show another profile if a user is mentioned)
+\`\$getVar[prefix]reset\` (resets every aspect of your profile)
+\`\$getVar[prefix]like @mention\` (likes another users profile)} {color:f29cfb} 
 ]
  `
 })
@@ -106,9 +108,7 @@ bot.awaitedCommand({
     code: `
 $editMessage[$message[1];{footer:🔄 - Return to home page}
 {title:Page 3} {description:**__Other Commands__**
-\`\p/invite\`
-\`\p/upvote\`
-\`\p/ping\`}{color:f29cfb}
+\`\$getVar[prefix]ping\`}{color:f29cfb}
 ]
 `
 })
