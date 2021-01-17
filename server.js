@@ -55,7 +55,6 @@ $textSplit[$sendMessage[{title: Help} {description:React to see the following pa
 4️⃣ - Global Profile Setup
 
 [Support Server\\](https://discord.com/invite/8G5TaED5Fm) | [Repo\\](https://github.com/jaxbots/Profile-Bot/)} {color:f29cfb};yes]; ]
-$channelSendMessage[784933988648878101;{title:Command Ran}{description:A command has been ran in [$serverName\\]($getServerInvite) by $username}{color:RANDOM}]
 `})
 
 //return to main page
