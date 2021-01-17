@@ -13,7 +13,7 @@ Profile Bot was created in 2020 by jaxon#6666 on Discord as a public, non self h
 ## Getting Started
 
 - Copy the repo link and create your project in Glitch
-- Go to the server.js file and enter your bot token into "bot-token-here", then choose a prefix where it says "prefix-goes-here".
+- Go to the server.js file and enter your bot token into "bot-token-here" at the very top, then scroll down and enter a chosen a prefix where it says "prefix-goes-here".
 
 ![Image](https://i.imgur.com/b2k6i1y.png)
 *enter under "token" and "prefix"*
