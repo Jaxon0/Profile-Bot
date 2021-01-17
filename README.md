@@ -21,4 +21,4 @@ Profile Bot was created in 2020 by jaxon#6666 on Discord as a public, non self h
 And you're done! Your bot should come online in your server and you got it!
 **if using repl you must click the run button**
 
-**This bot is __NOT__ made for public use. If you are found opening this to public, you will face consequences**
+**This bot is __NOT__ made for public use. If you are found opening this to public, you will face consequences*
