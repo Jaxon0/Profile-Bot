@@ -7,17 +7,18 @@ Profile bot is packed full of amazing profile features! Users in your discord se
 Profile Bot was created in 2020 by jaxon#6666 on Discord as a public, non self hosted bot. Now, in early 2021, I have chosen to require you to self host the bot. Heres how you do it:
 
 ## Prerequisites
-- A [Glitch.com](https://glitch.com) account
+- A [Glitch.com](https://glitch.com) or a [Repl.IT](https://repl.it] account
 - A bot application in the [Developer Portal](https://discord.com/developers)
 
 ## Getting Started
 
-- Copy the repo link and create your project in Glitch
+- Copy the repo link and create your project in Glitch/Repl.IT
 - Go to the server.js file and enter your bot token into "bot-token-here" at the very top, then scroll down and enter a chosen a prefix where it says "prefix-goes-here".
 
 ![Image](https://i.imgur.com/b2k6i1y.png)
 *enter under "token" and "prefix"*
 
 And you're done! Your bot should come online in your server and you got it!
+**if using repl you must click the run button**
 
 **This bot is __NOT__ made for public use. If you are found opening this to public, you will face consequences**
