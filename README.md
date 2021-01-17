@@ -1,5 +1,9 @@
 # Profile Bot
 
+## What Is Profile Bot?
+
+Profile bot is packed full of amazing profile features! Users in your discord server may very easily setup their own server profile, which can easily be seen by all! THe purpose of this bot is to make getting to know new users easy!
+
 Profile Bot was created in 2020 by jaxon#6666 on Discord as a public, non self hosted bot. Now, in early 2021, I have chosen to require you to self host the bot. Heres how you do it:
 
 ## Prerequisites
