@@ -7,7 +7,7 @@ Profile bot is packed full of amazing profile features! Users in your discord se
 Profile Bot was created in 2020 by jaxon#6666 on Discord as a public, non self hosted bot. Now, in early 2021, I have chosen to require you to self host the bot. Heres how you do it:
 
 ## Prerequisites
-- A [Glitch.com](https://glitch.com) or a [Repl.IT](https://repl.it] account
+- A [Glitch.com](https://glitch.com) or a [Repl.IT](https://repl.it) account
 - A bot application in the [Developer Portal](https://discord.com/developers)
 
 ## Getting Started
