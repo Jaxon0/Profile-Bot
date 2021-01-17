@@ -9,5 +9,4 @@ $footer[Executed by $username]
 $addTimestamp
 $color[f29cfb]
 $onlyIf[$charCount<=30;Sorry, occupation character limit is 30!]
-$channelSendMessage[784933988648878101;{title:Command Ran}{description:A command has been ran in [$serverName\\]($getServerInvite) by $username}{color:RANDOM}]`
-}
+`}
