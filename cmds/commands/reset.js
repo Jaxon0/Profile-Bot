@@ -14,5 +14,5 @@ $setUserVar[birthday;Not set yet!]
 $setUserVar[avatar;https://media.discordapp.net/attachments/773055345463394315/776267864931696640/unknown.png?width=453&height=453]
 $setUserVar[pronouns;Not set yet!]
 $color[f29cfb]
-$channelSendMessage[784933988648878101;{title:Command Ran}{description:A command has been ran in [$serverName\\]($getServerInvite) by $username}{color:RANDOM}]`
+`
 }
